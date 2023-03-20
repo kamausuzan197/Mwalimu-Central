@@ -120,7 +120,7 @@ function Resources() {
               categoris:
               <select value={categories} onChange={handleCategoriesChange}>
                 {categoris.map((categoris) => (
-                  <option value={categoris}>{categoris}</option>
+                  <option key={1} value={categoris}>{categoris}</option>
                 ))}
               </select>
             </label>
@@ -130,7 +130,7 @@ function Resources() {
               Grade Level:
               <select value={gradeLevel} onChange={handleGradeLevelChange}>
                 {grade_level.map((grade_level) => (
-                  <option value={grade_level}>{grade_level}</option>
+                  <option key={1} value={grade_level}>{grade_level}</option>
                 ))}
               </select>
             </label>
@@ -140,7 +140,7 @@ function Resources() {
               Learning Areas:
               <select value={learningArea} onChange={handleLearningAreaChange}>
                 {learning_areas.map((learning_areas) => (
-                  <option value={learning_areas}>{learning_areas}</option>
+                  <option key={1}value={learning_areas}>{learning_areas}</option>
                 ))}
               </select>
             </label>
